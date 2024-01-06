@@ -20,7 +20,64 @@
     src: url(../fonts/Manrope/Manrope-VariableFont_wght.ttf);
 }
 
-@media  (max-width: 360px) {
+body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Manrope;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+p {
+    font-family: Montsserat2;
+    font-style: 16px;
+}
+
+.podcastDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    background-color: #f2c0b8;
+    border-radius: 10px;
+}
+
+audio {
+    width: 300px;
+    border-radius: 50px;
+    background-color: rgb(3, 238, 120)
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 20px;
+    color: blueviolet;
+    font-family: Manrope;
+}
+
+.button::before {
+    content: "► ";
+    color: blueviolet;
+    font-family: Manrope;
+}
+
+@media (max-width: 360px) {
 
     body {
         display: flex;
@@ -52,15 +109,15 @@
         border-radius: 50px;
         border: none;
         margin-bottom: 20px;
-        color:blueviolet;
+        color: blueviolet;
         font-family: Manrope;
     }
 
     .button::before {
         content: "► ";
-        color:blueviolet;
+        color: blueviolet;
         font-family: Manrope;
     }
 
-    
+
 }
